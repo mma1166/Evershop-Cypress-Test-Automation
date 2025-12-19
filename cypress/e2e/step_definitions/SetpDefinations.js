@@ -17,7 +17,7 @@ When("Insert Full Name", () => {
 
 Then("Insert Email",() =>{
     cy.wait(2000)
-    cy.xpath(locators.Email).type("libip89143@arugy.com")
+    cy.xpath(locators.Email).type("gakib99677@m3player.com")
 })
 
 Then("Insert Password",() =>{
@@ -33,7 +33,7 @@ Given("User is on Login Page", () => {
 });
 
 When("Insert Login Details", () => {
-    cy.xpath(locators.Email).type("libip89143@arugy.com")
+    cy.xpath(locators.Email).type("gakib99677@m3player.com")
     cy.xpath(locators.Password).type("Amit@1234")
 });
 
@@ -58,8 +58,8 @@ When("Add New Address", () => {
 });
 
 Then("Insert New Address Details", () => {
-    cy.xpath(locators.DFullName).type("Muntasir Amit")
-    cy.xpath(locators.DTelephone).type("0123489009")
+    cy.xpath(locators.FullName).type("Muntasir Amit")
+    cy.xpath(locators.Telephone).type("0123489009")
     cy.xpath(locators.AddressHome).type("123, Bhuter Goli)")
     cy.xpath(locators.City).type("New York")
     cy.xpath(locators.Country).scrollIntoView().select("United States")

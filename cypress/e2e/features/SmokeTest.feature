@@ -50,7 +50,6 @@ Then Click on the Product
 Then Select Product Variant
 Then Add the Product to Cart
 
-
 @Case6
 Scenario: Verify Checkout Functionality from Cart
 Given User is on Login Page
