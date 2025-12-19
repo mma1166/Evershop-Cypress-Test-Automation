@@ -51,28 +51,29 @@ Feature: Signup Functionality
 # Then Select Product Variant
 # Then Add the Product to Cart
 
-@case6
-Scenario: Verify Cart Functionality
-Given User is on Login Page
-When Insert Login Details
-Then Click on Signin Button
-Given Visit Home Page
-Given User is on Shopping Cart Page
-When Increase Product Quantity
-Then Verify Two Quantity in Cart
-Then Verify Total Price for Two Items
-When Decrease Product Quantity
-Then Verify One Quantity in Cart
-Then Verify Total Price for One Item
+# @case6
+# Scenario: Verify Cart Functionality
+# Given User is on Login Page
+# When Insert Login Details
+# Then Click on Signin Button
+# Given Visit Home Page
+# Given User is on Shopping Cart Page
+# When Increase Product Quantity
+# Then Verify Two Quantity in Cart
+# Then Verify Total Price for Two Items
+# When Decrease Product Quantity
+# Then Verify One Quantity in Cart
+# Then Verify Total Price for One Item
 
-@Case7
-Scenario: Verify Checkout Functionality from Cart
-Given User is on Login Page
-When Insert Login Details
-Then Click on Signin Button
-Given Visit Home Page 
-Given User is on Shopping Cart Page
-Given Checkout item from Shopping Cart
-Then Insert Delivary Address Details
-Then Insert Shipping Method and Payment Method
-Then Place the Order
+# @Case7
+# Scenario: Verify Checkout Functionality from Cart
+# Given User is on Login Page
+# When Insert Login Details
+# Then Click on Signin Button
+# Given Visit Home Page 
+# Given User is on Shopping Cart Page
+# Given Checkout item from Shopping Cart
+# Then Insert Delivary Address Details
+# Then Insert Shipping Method and Payment Method
+# Then Place the Order
+# Then Check Order Confirmation

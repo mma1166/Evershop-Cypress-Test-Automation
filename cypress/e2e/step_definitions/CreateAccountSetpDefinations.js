@@ -2,6 +2,7 @@ import {Given,When,Then} from "@badeball/cypress-cucumber-preprocessor";
 import CreateAccountLocators from "../../Locators/CreateAccountLocators";
 import allData from '../../data/data'
 import 'cypress-file-upload';
+import 'cypress-iframe';
 Cypress.config('defaultCommandTimeout', 3000)
 const Locators = new CreateAccountLocators();
 const data = new allData();
@@ -57,8 +58,8 @@ When("Add New Address", () => {
 });
 
 Then("Insert New Address Details", () => {
-    cy.xpath(Locators.AddressFullName).type("Muntasir Amit")
-    cy.xpath(Locators.Telephone).type("00123489009")
+    cy.xpath(Locators.DFullName).type("Muntasir Amit")
+    cy.xpath(Locators.DTelephone).type("00123489009")
     cy.xpath(Locators.AddressHome).type("123, Bhuter Goli)")
     cy.xpath(Locators.City).type("New York")
     cy.xpath(Locators.Country).scrollIntoView().select("United States")
@@ -130,13 +131,15 @@ Given("Checkout item from Shopping Cart", () => {
 });
 
 Then("Insert Delivary Address Details", () => {
-    cy.xpath(Locators.DAddressFullName).type("Muntasir Amit")
+    cy.wait(2000)
+    cy.xpath(Locators.DFullName).should('be.visible').type("Muntasir Amit")
     cy.xpath(Locators.DTelephone).type("00123489009")
+    cy.wait(2000)
     cy.xpath(Locators.DAddressHome).type("123, Bhuter Goli)")
     cy.xpath(Locators.DCity).type("New York")
     cy.xpath(Locators.DCountry).scrollIntoView().select("United States")
     cy.xpath(Locators.DProvince).scrollIntoView().select("New York")
-    cy.xpath(Locators.PostalCode).type("10001")
+    cy.xpath(Locators.DPostalCode).type("10001")
 });
 
 Then("Insert Shipping Method and Payment Method", () => {
@@ -145,5 +148,12 @@ Then("Insert Shipping Method and Payment Method", () => {
 });
 
 Then("Place the Order", () => {
-    cy.xpath(Locators.PlaceOrderButton).click()
+    cy.xpath(Locators.PlaceOrderButton).should('be.visible')
+    cy.wait(2000)
+    cy.xpath(Locators.PlaceOrderButton)
+    .click({ force: true })
 });
+
+Then("Check Order Confirmation", () => {
+    cy.xpath(Locators.ThankYouOrderConfirmation).should('be.visible')
+}); 

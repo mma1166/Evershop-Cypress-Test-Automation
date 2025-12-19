@@ -24,6 +24,7 @@
     "@shelex/cypress-allure-plugin": "^2.40.0",
     "cypress": "^12.17.4",
     "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1",
     "esbuild": "^0.16.4",
     "multiple-cucumber-html-reporter": "^3.5.0"
