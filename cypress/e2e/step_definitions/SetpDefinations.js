@@ -17,7 +17,7 @@ When("Insert Full Name", () => {
 
 Then("Insert Email",() =>{
     cy.wait(2000)
-    cy.xpath(locators.Email).type("gakib99677@m3player.com")
+    cy.xpath(locators.Email).type("tywygiwe@forexzig.com")
 })
 
 Then("Insert Password",() =>{
@@ -33,7 +33,7 @@ Given("User is on Login Page", () => {
 });
 
 When("Insert Login Details", () => {
-    cy.xpath(locators.Email).type("gakib99677@m3player.com")
+    cy.xpath(locators.Email).type("tywygiwe@forexzig.com")
     cy.xpath(locators.Password).type("Amit@1234")
 });
 

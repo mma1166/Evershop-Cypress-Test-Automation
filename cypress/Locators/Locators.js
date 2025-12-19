@@ -4,7 +4,7 @@ class Locators {
     Password="//input[@id='field-password']"
     SignupButton="//span[normalize-space()='Sign Up']"
     AccountHolderName="//div[contains(text(),'Muntasir Amit')]"
-    AccountHolderEmail="//div[contains(text(),'gakib99677@m3player.com')]"
+    AccountHolderEmail="//div[contains(text(),'tywygiwe@forexzig.com')]"
     AddressFullName ="//input[@id='field-full_name']"
     Telephone ="//input[@id='field-telephone']"
     AddressHome="//input[@id='field-address_1']"
