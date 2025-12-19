@@ -1,0 +1,51 @@
+class CreateAccountLocators {
+    FullName="//input[@id='field-full_name']"
+    Email="//input[@id='field-email']"
+    Password="//input[@id='field-password']"
+    SignupButton="//span[normalize-space()='Sign Up']"
+    AccountHolderName="//div[contains(text(),'Muntasir Amit')]"
+    AccountHolderEmail="//div[contains(text(),'pefoc63669@nctime.com')]"
+    AddressFullName ="//input[@id='field-full_name']"
+    Telephone ="//input[@id='field-telephone']"
+    AddressHome="//input[@id='field-address_1']"
+    City="//input[@id='field-city']"
+    Country="//select[@id='field-country']"
+    State="//select[@id='field-province']"
+    PostalCode="//input[@id='field-postcode']"
+    SetAsDefaultBillingAddress="//input[@id='field-is_default']"
+    SaveAddressButton ="//span[normalize-space()='Save']"
+    MyAccountHeader="//h1[normalize-space()='My Account']"
+    NewAddress="/html[1]/body[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/a[1]"
+    SigninButton="//span[normalize-space()='Sign In']"
+    SearchBoxIcon="//*[local-name()='svg']//*[local-name()='path' and @d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z']"
+    SearchBox="/html[1]/body[1]/div[1]/div[1]/header[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/input[1]"
+    AddToCartButton="body > div:nth-child(1) > div:nth-child(1) > main:nth-child(3) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > button:nth-child(1)"
+    ThermosColor="//a[normalize-space()='Black']"
+    AddToCartButton="button[type='button'] span"
+    ViewCartButton="//button[normalize-space()='View Cart (1)']"
+    PlusQuantityButton="button[class='disabled:opacity-50 text-lg']"
+    MinusQuantityButton="//button[@class='px-1 disabled:opacity-50 text-lg']"
+    TotalPriceInitial="//span[@class='font-bold' and normalize-space()='$35.00']"
+    TotalPriceForTwo="//span[@class='font-bold' and normalize-space()='$70.00']"
+    TotalPriceAfterOneRemoved="//span[@class='font-bold' and normalize-space()='$35.00']"
+    QuantityNumber="//span[@class='min-w-[3rem] text-center']"
+    CheckoutButton="//span[normalize-space()='CHECKOUT']"
+    DFullName ="input[id='field-shippingAddress.full_name']"
+    DTelephone ="input[id='field-shippingAddress.telephone']"
+    DAddressHome="input[id='field-shippingAddress.address_1']"
+    DCity="input[id='field-shippingAddress.city']"
+    DCountry="select[id='field-shippingAddress.country']"
+    DProvince="select[id='field-shippingAddress.province']"
+    DPostalCode="input[id='field-shippingAddress.postcode']"
+    ExpressShippingOption="//a[normalize-space()='Express']"
+    CODPaymentOption="//span[normalize-space()='Cash On Delivery']"
+    ShoppingCartHeaderIcon="//button[contains(@aria-label,'Shopping cart')]//*[name()='svg']"
+    PlaceOrderButton="//span[contains(text(),'Place Order')]"
+
+
+
+
+
+}
+
+export default CreateAccountLocators
