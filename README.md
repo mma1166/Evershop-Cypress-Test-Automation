@@ -2,7 +2,7 @@
 
 ## 📋 Project Overview
 
-This project is an end-to-end automation testing suite for the **EverShop** e-commerce demo application using **Cypress** with **Cucumber BDD** framework. The test suite covers critical user journeys including account creation, authentication, address management, product search, shopping cart operations, and checkout functionality.
+This project is an end to end automation testing suite for the **EverShop** e-commerce demo application using **Cypress** with **Cucumber BDD** framework. The test suite covers critical user journeys including account creation, authentication, address management, product search, shopping cart operations, and checkout functionality.
 
 ## 🚀 Features
 
